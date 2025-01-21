@@ -17,7 +17,7 @@ export default function Contact() {
         console.log("cccccccccc")
         setStatus("Sending...");
         try {
-            const response = await fetch("http://localhost:3000/api/sendMail", {
+            const response = await fetch("/api/sendMail", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
